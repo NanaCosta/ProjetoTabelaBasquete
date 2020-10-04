@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Basquete da Maria</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/projeto.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo">Basquete da Maria</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Tabela de Pontos</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Jogos</th>
+							<th>Placar</th>
+							<th>Mínimo da Temporada</th>
+							<th>Máximo da Temporada</th>
+							<th>Quebra Recorde Mín.</th>
+							<th>Quebra Recorde Máx.</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pontos">
+						
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar Pontuação</h2>
+		    <ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="jogo">Jogo</label>
+		            <input id="jogo" name="jogo" type="text" placeholder="digite o número do jogo" class="campo" autofocus="">
+		        </div>
+		        <div class="grupo">
+		            <label for="placar">Placar</label>
+		            <input id="placar" name="placar" type="text" placeholder="digite a pontuação do placar" class="campo campo-medio">
+		        </div>
+		        <button id="adicionar-placar" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+
+
+		<script src="js/adiciona-ponto.js" ></script>
+		<script src="js/remover-ponto.js" ></script>
+	</body>
+</html>
